@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paam Global India</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Image Section */
+        .img-content {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .img-content img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Main Content Section */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px;
+            background-color: antiquewhite;
+        }
+
+        .container .left, .container .right {
+            width: 48%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left {
+            background-color: red;
+        }
+
+        .right {
+            background-color: blue;
+        }
+
+        .left h1, .right h1 {
+            color: white;
+        }
+
+        .left p, .right p {
+            color: white;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .container .left, .container .right {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            nav {
+                justify-content: center;
+                width: 100%;
+            }
+
+            nav a {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h2>PAAM Global India</h2>
+        <nav>
+            <a href="Paam.html">Home</a>
+            <a href="img.html">new page</a>
+            <a href="web page.html">About</a>
+            <a href="college.html">Gallery</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Image Section -->
+    <div class="img-content">
+        <img src="Global-India.webp" alt="Global India">
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="left">
+            <h1>First Paragraph</h1>
+            <p>This is the first paragraph. It introduces the website and provides some basic information. You can expand this content to add more details about your site or project.</p>
+        </div>
+        <div class="right">
+            <h1>Second Paragraph</h1>
+            <p>This is the second paragraph. It continues from the first one, offering additional information or elaborating on the topic. You can style each paragraph differently using CSS.</p>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <section>
+        <div>
+            <h1>Video</h1>
+        </div>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Table Section -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Pankaj</td>
+            <td>22</td>
+            <td>Jalgaon</td>
+        </tr>
+        <tr>
+            <td>Pranav</td>
+            <td>21</td>
+            <td>Raver</td>
+        </tr>
+        <tr>
+            <td>Jayesh</td>
+            <td>21</td>
+            <td>Khanapur</td>
+        </tr>
+    </table>
+
+    <!-- Form Section -->
+    <h2>Form:</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Unordered and Ordered Lists -->
+    <h2>List:</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Paam Global India and Services</p>
+    </footer>
+
+</body>
+</html>
